@@ -10,8 +10,8 @@ body{
   /* Set the card's dimensions, and size it relative to
      it's font size. */
   font-size: inherit;
-  width: 3.42em;
-  height: 5.5em;
+  width: 3.32em;
+  height: 5.4em;
   /* Scale and set the background settings. */
   background-repeat: no-repeat;
   background-position: center center;
@@ -23,6 +23,7 @@ body{
   overflow: hidden;
   /* Default sizes for cards (size based off the font). */
   /* Optional styles for cards: borderless and drop shadow. */
+  border-radius: .28em;
   /* Not a card, but a card-shaped outline to represent a
      droppable place, like an empty pile. */ }
   .card.small {
