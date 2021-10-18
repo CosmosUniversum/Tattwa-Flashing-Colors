@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body{
+  background-color: #aaaaaab2;
+}
 .card {
   box-sizing: border-box;
   display: inline-block;
@@ -7,12 +10,8 @@
   /* Set the card's dimensions, and size it relative to
      it's font size. */
   font-size: inherit;
-  width: 4.0em;
+  width: 3.42em;
   height: 5.5em;
-  /* Add a default background color and border. */
-  background-color: #fff;
-  border-radius: 0.20em;
-  border: 1px solid #c3c3c3;
   /* Scale and set the background settings. */
   background-repeat: no-repeat;
   background-position: center center;
@@ -32,6 +31,9 @@
     font-size: 26px; }
   .card.xlarge {
     font-size: 42px; }
+  .card.mainview {
+    font-size: 84px;
+  }
   .card.no-border {
     border: 0; }
   .card.shadow {
@@ -41,7 +43,13 @@
     background-color: rgba(195, 195, 195, 0.5);
     border: 0.15em dashed #daa520; }
 
-.card.wht.ether.et {
+.card.wht.plain {
+  background-image: url("../card-images/Plain/wht-only.png");}
+
+.card.blk.plain {
+  background-image: url("../card-images/Plain/blk-only.png");}
+
+  .card.wht.ether.et {
   background-image: url("../card-images/wht-bg/Ether/Ether-Ether-wht.png"); }
 
 .card.wht.ether.f {
