@@ -50,39 +50,39 @@ body{
 .card.blk.plain {
   background-image: url("../card-images/Plain/blk-only.png");}
 
-  .card.wht.ether.et
-  .w00 {
+.card.wht.ether.et,
+.w00 {
   background-image: url("../card-images/wht-bg/Ether/Ether-Ether-wht.png"); }
 
-.card.wht.ether.f
+.card.wht.ether.f,
 .w01 {
   background-image: url("../card-images/wht-bg/Ether/Ether-Fire-wht.png"); }
 
-.card.wht.ether.a
+.card.wht.ether.a,
 .w02 {
   background-image: url("../card-images/wht-bg/Ether/Ether-Air-wht.png"); }
 
-.card.wht.ether.w
+.card.wht.ether.w,
 .w03 {
   background-image: url("../card-images/wht-bg/Ether/Ether-Water-wht.png"); }
 
-.card.wht.ether.e
+.card.wht.ether.e,
 .w04 {
     background-image: url("../card-images/wht-bg/Ether/Ether-Earth-wht.png"); }
 
-.card.wht.fire.et
+.card.wht.fire.et,
 .w10 {
   background-image: url("../card-images/wht-bg/Fire/Fire-Ether-wht.png"); }
 
-.card.wht.fire.f 
+.card.wht.fire.f,
 .w11 {
   background-image: url("../card-images/wht-bg/Fire/Fire-Fire-wht.png"); }
 
-.card.wht.fire.a
+.card.wht.fire.a,
 .w12 {
   background-image: url("../card-images/wht-bg/Fire/Fire-Air-wht.png"); }
 
-.card.wht.fire.w
+.card.wht.fire.w,
 .w13 {
   background-image: url("../card-images/wht-bg/Fire/Fire-Water-wht.png"); }
 
@@ -90,164 +90,164 @@ body{
 .w14 {
   background-image: url("../card-images/wht-bg/Fire/Fire-Earth-wht.png"); }
 
-.card.wht.air.et
+.card.wht.air.et,
 .w20 {
   background-image: url("../card-images/wht-bg/Air/Air-Ether-wht.png"); }
 
-.card.wht.air.f
+.card.wht.air.f,
 .w21 {
   background-image: url("../card-images/wht-bg/Air/Air-Fire-wht.png"); }
 
-.card.wht.air.a
+.card.wht.air.a,
 .w22 {
   background-image: url("../card-images/wht-bg/Air/Air-Air-wht.png"); }
 
-.card.wht.air.w
+.card.wht.air.w,
 .w23 {
   background-image: url("../card-images/wht-bg/Air/Air-Water-wht.png"); }
 
-.card.wht.air.e
+.card.wht.air.e,
 .w24 {
   background-image: url("../card-images/wht-bg/Air/Air-Earth-wht.png"); }
 
-.card.wht.water.et
+.card.wht.water.et,
 .w30 {
   background-image: url("../card-images/wht-bg/Water/Water-Ether-wht.png"); }
 
-.card.wht.water.f
+.card.wht.water.f,
 .w31 {
   background-image: url("../card-images/wht-bg/Water/Water-Fire-wht.png"); }
 
-.card.wht.water.a
+.card.wht.water.a,
 .w32 {
   background-image: url("../card-images/wht-bg/Water/Water-Air-wht.png"); }
 
-.card.wht.water.w
+.card.wht.water.w,
 .w33 {
   background-image: url("../card-images/wht-bg/Water/Water-Water-wht.png"); }
 
-.card.wht.water.e
+.card.wht.water.e,
 .w34 {
   background-image: url("../card-images/wht-bg/Water/Water-Earth-wht.png"); }
 
-.card.wht.earth.et
+.card.wht.earth.et,
 .w40 {
   background-image: url("../card-images/wht-bg/Earth/Earth-Ether-wht.png"); }
 
-.card.wht.earth.f
+.card.wht.earth.f,
 .w41 {
   background-image: url("../card-images/wht-bg/Earth/Earth-Fire-wht.png"); }
 
-.card.wht.earth.a
+.card.wht.earth.a,
 .w42 {
     background-image: url("../card-images/wht-bg/Earth/Earth-Air-wht.png"); }
 
-.card.wht.earth.w
+.card.wht.earth.w,
 .w43 {
   background-image: url("../card-images/wht-bg/Earth/Earth-Water-wht.png"); }
 
-.card.wht.earth.e
+.card.wht.earth.e,
 .w44 {
   background-image: url("../card-images/wht-bg/Earth/Earth-Earth-wht.png"); }
 
   
-.card.blk.ether.et 
+.card.blk.ether.et, 
 .b00 {
   background-image: url("../card-images/blk-bg/Ether/Ether-Ether-blk.png"); }
 
-.card.blk.ether.f
+.card.blk.ether.f,
 .b01 {
   background-image: url("../card-images/blk-bg/Ether/Ether-Fire-blk.png"); }
 
-.card.blk.ether.a
+.card.blk.ether.a,
 .b02 {
   background-image: url("../card-images/blk-bg/Ether/Ether-Air-blk.png"); }
 
-.card.blk.ether.w
+.card.blk.ether.w,
 .b03 {
   background-image: url("../card-images/blk-bg/Ether/Ether-Water-blk.png"); }
 
-.card.blk.ether.e
+.card.blk.ether.e,
 .b04 {
     background-image: url("../card-images/blk-bg/Ether/Ether-Earth-blk.png"); }
 
-.card.blk.fire.et
+.card.blk.fire.et,
 .b10 {
   background-image: url("../card-images/blk-bg/Fire/Fire-Ether-blk.png"); }
 
-.card.blk.fire.f
+.card.blk.fire.f,
 .b11 {
   background-image: url("../card-images/blk-bg/Fire/Fire-Fire-blk.png"); }
 
-.card.blk.fire.a
+.card.blk.fire.a,
 .b12 {
   background-image: url("../card-images/blk-bg/Fire/Fire-Air-blk.png"); }
 
-.card.blk.fire.w
+.card.blk.fire.w,
 .b13 {
   background-image: url("../card-images/blk-bg/Fire/Fire-Water-blk.png"); }
 
-.card.blk.fire.e
+.card.blk.fire.e,
 .b14 {
   background-image: url("../card-images/blk-bg/Fire/Fire-Earth-blk.png"); }
 
-.card.blk.air.et
+.card.blk.air.et,
 .b20 {
   background-image: url("../card-images/blk-bg/Air/Air-Ether-blk.png"); }
 
-.card.blk.air.f
+.card.blk.air.f,
 .b21 {
   background-image: url("../card-images/blk-bg/Air/Air-Fire-blk.png"); }
 
-.card.blk.air.a
+.card.blk.air.a,
 .b22 {
   background-image: url("../card-images/blk-bg/Air/Air-Air-blk.png"); }
 
-.card.blk.air.w
+.card.blk.air.w,
 .b23 {
   background-image: url("../card-images/blk-bg/Air/Air-Water-blk.png"); }
 
-.card.blk.air.e
+.card.blk.air.e,
 .b24 {
   background-image: url("../card-images/blk-bg/Air/Air-Earth-blk.png"); }
 
-.card.blk.water.et
+.card.blk.water.et,
 .b30 {
   background-image: url("../card-images/blk-bg/Water/Water-Ether-blk.png"); }
 
-.card.blk.water.f
+.card.blk.water.f,
 .b31 {
   background-image: url("../card-images/blk-bg/Water/Water-Fire-blk.png"); }
 
-.card.blk.water.a
+.card.blk.water.a,
 .b32 {
   background-image: url("../card-images/blk-bg/Water/Water-Air-blk.png"); }
 
-.card.blk.water.w
+.card.blk.water.w,
 .b33 {
   background-image: url("../card-images/blk-bg/Water/Water-Water-blk.png"); }
 
-.card.blk.water.e
+.card.blk.water.e,
 .b34 {
   background-image: url("../card-images/blk-bg/Water/Water-Earth-blk.png"); }
 
-.card.blk.earth.et
+.card.blk.earth.et,
 .b40 {
   background-image: url("../card-images/blk-bg/Earth/Earth-Ether-blk.png"); }
 
-.card.blk.earth.f
+.card.blk.earth.f,
 .b41 {
   background-image: url("../card-images/blk-bg/Earth/Earth-Fire-blk.png"); }
 
-.card.blk.earth.a
+.card.blk.earth.a,
 .b42 {
     background-image: url("../card-images/blk-bg/Earth/Earth-Air-blk.png"); }
 
-.card.blk.earth.w
+.card.blk.earth.w,
 .b43 {
   background-image: url("../card-images/blk-bg/Earth/Earth-Water-blk.png"); }
 
-.card.blk.earth.e
+.card.blk.earth.e,
 .b44 {
   background-image: url("../card-images/blk-bg/Earth/Earth-Earth-blk.png"); }
 
