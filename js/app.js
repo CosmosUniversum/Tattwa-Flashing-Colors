@@ -1,16 +1,16 @@
 // Declare Deck Variables
 
-let whtDeck = []
-let blkDeck = []
+let whtTheme = []
+let blkTheme = []
 let mainCard = []
 
-let whtDeckEl = document.getElementById('whtDeck')
-let blkDeckEl = document.getElementById('blkDeck')
+let whtThemeEl = document.getElementById('whtTheme')
+let blkThemeEl = document.getElementById('blkTheme')
 let mainCardEl = document.getElementById('mainCard')
 
-document.getElementById('whtDeck').addEventListener('click',() => {
+document.getElementById('whtTheme').addEventListener('click',() => {
   document.querySelectorAll('cardSet')})
-document.getElementById('blkDeck').addEventListener('click',() => {
+document.getElementById('blkTheme').addEventListener('click',() => {
   console.log('clicked black deck')})
 document.getElementById('mainCard').addEventListener('click',() => {
   console.log('clicked main card')})
