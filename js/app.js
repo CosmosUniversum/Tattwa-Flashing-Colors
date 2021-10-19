@@ -6,24 +6,33 @@ let mainCard = []
 /*------------- Variables (state) -------------*/
 
 /*--------- Cached Element References ---------*/
-let whtThemeEl = document.getElementById('whtTheme')
-let blkThemeEl = document.getElementById('blkTheme')
-let mainCardEl = document.getElementById('mainCard')
-let cardGridEl = document.getElementById('cardGrid')
+whtThemeCardEl = document.getElementById('whtThemeCard')
+blkThemeCardEl = document.getElementById('blkThemeCard')
+mainCardEl = document.getElementById('mainCard')
+cardGridEl = document.getElementById('cardGrid')
+cardsEl = document.getElementById('card')
+startBtnEl = document.getElementById('startBtn')
+startBtnEl = document.getElementById('startBtn')
 
 /*-------------- Event Listeners --------------*/
 
-document.getElementById('whtTheme').addEventListener('click',() => {
+whtThemeCardEl.addEventListener('click',() => {
   document.querySelectorAll('#card').forEach((card) => {
     card.classList.replace('blk', 'wht')
   })})
 
-document.getElementById('blkTheme').addEventListener('click',() => {
+blkThemeCardEl.addEventListener('click',() => {
   document.querySelectorAll('#card').forEach((card) => {
     card.classList.replace('wht', 'blk')
   })})
 
-document.getElementById('mainCard').addEventListener('click',() => {
+cardGridEl.addEventListener('click',(evt) => {
+  if (evt.target.id === 'card') {
+    mainCardEl.classList.value = evt.target.classList.value.replace('small', 'mainCard')
+  }
+})
+
+mainCardEl.addEventListener('click',() => {
   console.log('clicked main card')})
 
 document.getElementById('startBtn').addEventListener('click',() => {
