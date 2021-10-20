@@ -16,7 +16,7 @@ cardsEl = document.getElementById('card')
 startBtnEl = document.getElementById('startBtn')
 resetBtnEl = document.getElementById('resetBtn')
 timerEl = document.getElementById('timer')
-
+timeLimitEl = document.getElementById('timeSelect')
 /*-------------- Event Listeners --------------*/
 
 whtThemeCardEl.addEventListener('click',() => {
@@ -38,8 +38,22 @@ cardGridEl.addEventListener('click',(evt) => {
 mainCardEl.addEventListener('click',() => {
   console.log('clicked main card')})
 
+timeLimitEl.addEventListener('click', (evt) =>{
+  if (evt.target.value === '') {
+    console.log('empty')
+  }else if(evt.target.value < 10) {
+    timerEl.innerText = `${evt.target.value}:00`;
+    seconds = 60
+  } else{
+    timerEl.innerText = `0:${evt.target.value}`;
+    sec, seconds = evt.target.value
+  console.log('im a second')
+  }
+})
+
 startBtnEl.addEventListener('click',() => {
   startBtnEl.textContent = (startBtnEl.textContent === 'Start') ? 'Stop' : 'Start'
+  console.log(timerIntervalId)
   if (timerIntervalId) {
     clearInterval(timerIntervalId)
     timerIntervalId = null
@@ -64,7 +78,7 @@ resetBtnEl.addEventListener('click',() => {
 init ()
 
 function tick() {
-  seconds++
+  seconds--
   render()
 }
 
@@ -79,8 +93,11 @@ function init() {
 
 function render() {
   min = Math.floor(seconds / 60);
-  hr = Math.floor(seconds / 3600);
   sec = seconds % 60;
   min = min % 60;
-  (sec < 10) ? timerEl.innerText = `${min}:0${sec}` : timerEl.innerText = `${min}:${sec}`
+  if (sec < 10 && sec != 0) {
+    timerEl.innerText = `${min}:0${sec}`
+  } else {
+    timerEl.innerText = `${min}:${sec}`;
+  } 
 }
