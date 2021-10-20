@@ -90,15 +90,22 @@ resetBtnEl.addEventListener('click',() => {
 })
 
 logBtnEl.addEventListener('click',() => {
-  if (userColorInputEl.value === null) {
+  if (userColorInputEl.value === '') {
   }else{
+    let newUserInput = document.createElement('li');
 
-    createColorResultsLi.textContent = userColorInputEl.value;
-    colorResultsEl.append(createColorResultsLi);
-    createTimeResultsLi.textContent = timerEl.innerText;
-    timeResultsEl.append(createTimeResultsLi);
-    createCardLogLi.classList = loggedCard.replace('small', 'xsmall');
-    cardLogEl.append(createCardLogLi)
+    newUserInput.textContent = userColorInputEl.value;
+    colorResultsEl.appendChild(newUserInput);
+
+    let newTime = document.createElement('li');
+
+    newTime.textContent = timerEl.innerText;
+    timeResultsEl.appendChild(newTime);
+
+    let newCard = document.createElement('li');
+    
+    newCard.classList = loggedCard.replace('small', 'xsmall');
+    cardLogEl.appendChild(newCard);
   }
 })
 
