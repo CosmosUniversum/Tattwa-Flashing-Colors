@@ -17,6 +17,7 @@ startBtnEl = document.getElementById('startBtn')
 resetBtnEl = document.getElementById('resetBtn')
 timerEl = document.getElementById('timer')
 timeLimitEl = document.getElementById('timeSelect')
+checkMainCard = mainCardEl.classList.value.includes('outline')
 /*-------------- Event Listeners --------------*/
 
 whtThemeCardEl.addEventListener('click',() => {
@@ -40,14 +41,12 @@ mainCardEl.addEventListener('click',() => {
 
 timeLimitEl.addEventListener('click', (evt) =>{
   if (evt.target.value === '') {
-    console.log('empty')
   }else if(evt.target.value < 10) {
-    timerEl.innerText = `${evt.target.value}:00`;
+    timerEl.innerText = `${evt.target.value}:0${sec}`;
     seconds = 60
   } else{
     timerEl.innerText = `0:${evt.target.value}`;
     sec, seconds = evt.target.value
-  console.log('im a second')
   }
 })
 
@@ -65,8 +64,13 @@ startBtnEl.addEventListener('click',() => {
 resetBtnEl.addEventListener('click',() => {
   startBtnEl.textContent = 'Start'
   clearInterval(timerIntervalId)
-  seconds = 0
   timerIntervalId = null
+  if (timeLimitEl.value === null){
+    seconds = 0
+  } else {
+      seconds = timeLimitEl.value
+  }
+  resetCard()
   render()
 })
 /*----------------- Functions -----------------*/
@@ -76,9 +80,20 @@ resetBtnEl.addEventListener('click',() => {
 
 
 init ()
+function resetCard () {
+  mainCardEl.classList.value = "card outline mainCard"
+}
+function removeMainCard () {
+  if (mainCardEl.classList.value.includes('outline')) {}
+    else {
+      if (seconds === 0){
+        mainCardEl.classList.value.includes('wht') ? mainCardEl.classList.value = "card wht plain mainCard shadow" : mainCardEl.classList.value = "card blk plain mainCard shadow"
+        }
+    }
+  }
 
 function tick() {
-  seconds--
+  mainCardEl.classList.value.includes('plain') ? seconds++ : seconds--
   render()
 }
 
@@ -92,10 +107,11 @@ function init() {
 }
 
 function render() {
+  removeMainCard ()
   min = Math.floor(seconds / 60);
   sec = seconds % 60;
   min = min % 60;
-  if (sec < 10 && sec != 0) {
+  if (sec < 10) {
     timerEl.innerText = `${min}:0${sec}`
   } else {
     timerEl.innerText = `${min}:${sec}`;
