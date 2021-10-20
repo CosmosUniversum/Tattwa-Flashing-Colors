@@ -26,6 +26,9 @@ body{
   border-radius: .28em;
   /* Not a card, but a card-shaped outline to represent a
      droppable place, like an empty pile. */ }
+
+  .card.xsmall {
+    font-size: 9px; }
   .card.small {
     font-size: 12px; }
   .card.large {

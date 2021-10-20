@@ -7,7 +7,7 @@ let min, sec, seconds = 0
 createColorResultsLi = document.createElement('li')
 createTimeResultsLi = document.createElement('li')
 createCardLogLi = document.createElement('li')
-let loggedCard = null
+let loggedCard = [null]
 
 /*------------- Variables (state) -------------*/
 
@@ -42,7 +42,7 @@ blkThemeCardEl.addEventListener('click',() => {
 cardGridEl.addEventListener('click',(evt) => {
   if (evt.target.id === 'card') {
     mainCardEl.classList.value = evt.target.classList.value.replace('small', 'mainCard');
-  //   loggedCard = 
+    loggedCard = evt.target.classList.value;
   }
 })
 
@@ -86,6 +86,7 @@ resetBtnEl.addEventListener('click',() => {
   }
   resetCard()
   render()
+  loggedCard = [null]
 })
 
 logBtnEl.addEventListener('click',() => {
@@ -96,11 +97,10 @@ logBtnEl.addEventListener('click',() => {
     colorResultsEl.append(createColorResultsLi);
     createTimeResultsLi.textContent = timerEl.innerText;
     timeResultsEl.append(createTimeResultsLi);
-    createTimeResultsLi.textContent = timerEl.innerText;
-    timeResultsEl.append(createTimeResultsLi);
-
+    createCardLogLi.classList = loggedCard.replace('small', 'xsmall');
+    cardLogEl.append(createCardLogLi)
   }
-} )
+})
 
 
 /*----------------- Functions -----------------*/
