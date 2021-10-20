@@ -10,19 +10,24 @@
 </head>
 <body>
     <header></header>
+    <div id="mainCard" class="card outline mainCard"></div>
+    <input id="userColor" type="text" placeholder="Type flashed color here">
+    <button id="logBtn">Log Results</button>
+    <h3 id="mainCardMsg">You can change the cards background theme by clicking one of the themes below
+    </h3>
     <div id="whtThemeCard" class="card wht plain shadow"></div>
     <div id="blkThemeCard" class="card blk plain shadow"></div>
-    <div id="mainCard" class="card outline mainCard"></div>
     <select name="timeLimit" id="timeSelect">
-        <option value="">Please choose a time limit</option>
+        <option value="">Set a time limit</option>
         <option value="10">10 seconds</option>
         <option value="30">30 seconds</option>
         <option value="45">45 seconds</option>
         <option value="1">1 minute</option>
     </select>
     <h2  id='timer'>0:00</h2>
-    <button id="startBtn" class="timer start">Start</button>
-    <button id="resetBtn" class="timer reset">Reset</button>
+    <button id="startBtn">Start</button>
+    <button id="resetBtn">Reset</button>
+    <h3 id="cardGridMsg">Please choose a card</h3>
     <div id="cardGrid">
         <div class="row">
             <div id="card" class="card wht ether et small shadow"></div>

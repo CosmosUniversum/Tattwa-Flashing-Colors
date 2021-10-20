@@ -42,7 +42,7 @@ mainCardEl.addEventListener('click',() => {
 timeLimitEl.addEventListener('click', (evt) =>{
   if (evt.target.value === '') {
   }else if(evt.target.value < 10) {
-    timerEl.innerText = `${evt.target.value}:0${sec}`;
+    timerEl.innerText = `${evt.target.value}:00`;
     seconds = 60
   } else{
     timerEl.innerText = `0:${evt.target.value}`;
@@ -51,14 +51,18 @@ timeLimitEl.addEventListener('click', (evt) =>{
 })
 
 startBtnEl.addEventListener('click',() => {
-  startBtnEl.textContent = (startBtnEl.textContent === 'Start') ? 'Stop' : 'Start'
-  console.log(timerIntervalId)
+  if (timerEl.innerText === '0:00' || mainCardEl.classList.value.includes('outline')){
+  } else{
+  startBtnEl.textContent = (startBtnEl.textContent === 'Start') ? 'Stop' : 'Start';
+  if (timerEl.value === 0){
+    console.log('its zero')
+  } else{
   if (timerIntervalId) {
     clearInterval(timerIntervalId)
     timerIntervalId = null
   } else {
   startTimer();
-  }
+  }}}
 })
 
 resetBtnEl.addEventListener('click',() => {
@@ -68,11 +72,13 @@ resetBtnEl.addEventListener('click',() => {
   if (timeLimitEl.value === null){
     seconds = 0
   } else {
-      seconds = timeLimitEl.value
+    timeLimitEl.value < 10 ? console.log(timerEl.innerText = `${timeLimitEl.value}:00`)  : seconds = timeLimitEl.value;
   }
   resetCard()
   render()
 })
+
+
 /*----------------- Functions -----------------*/
 
 
@@ -111,7 +117,8 @@ function render() {
   min = Math.floor(seconds / 60);
   sec = seconds % 60;
   min = min % 60;
-  if (sec < 10) {
+  if (sec < 0) {
+  } else if (sec < 10) {
     timerEl.innerText = `${min}:0${sec}`
   } else {
     timerEl.innerText = `${min}:${sec}`;
