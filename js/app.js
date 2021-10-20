@@ -1,10 +1,14 @@
 /*----------------- Constants -----------------*/
-
 let whtTheme = []
 let blkTheme = []
 let mainCard = []
 let timerIntervalId
 let min, sec, seconds = 0
+createColorResultsLi = document.createElement('li')
+createTimeResultsLi = document.createElement('li')
+createCardLogLi = document.createElement('li')
+let loggedCard = null
+
 /*------------- Variables (state) -------------*/
 
 /*--------- Cached Element References ---------*/
@@ -18,6 +22,11 @@ resetBtnEl = document.getElementById('resetBtn')
 timerEl = document.getElementById('timer')
 timeLimitEl = document.getElementById('timeSelect')
 checkMainCard = mainCardEl.classList.value.includes('outline')
+logBtnEl = document.getElementById('logBtn')
+userColorInputEl = document.getElementById('userColor')
+colorResultsEl = document.getElementById('colorResults')
+timeResultsEl = document.getElementById('timeResults')
+cardLogEl = document.getElementById('cardElement')
 /*-------------- Event Listeners --------------*/
 
 whtThemeCardEl.addEventListener('click',() => {
@@ -32,7 +41,8 @@ blkThemeCardEl.addEventListener('click',() => {
 
 cardGridEl.addEventListener('click',(evt) => {
   if (evt.target.id === 'card') {
-    mainCardEl.classList.value = evt.target.classList.value.replace('small', 'mainCard')
+    mainCardEl.classList.value = evt.target.classList.value.replace('small', 'mainCard');
+  //   loggedCard = 
   }
 })
 
@@ -77,6 +87,20 @@ resetBtnEl.addEventListener('click',() => {
   resetCard()
   render()
 })
+
+logBtnEl.addEventListener('click',() => {
+  if (userColorInputEl.value === null) {
+  }else{
+
+    createColorResultsLi.textContent = userColorInputEl.value;
+    colorResultsEl.append(createColorResultsLi);
+    createTimeResultsLi.textContent = timerEl.innerText;
+    timeResultsEl.append(createTimeResultsLi);
+    createTimeResultsLi.textContent = timerEl.innerText;
+    timeResultsEl.append(createTimeResultsLi);
+
+  }
+} )
 
 
 /*----------------- Functions -----------------*/
