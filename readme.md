@@ -27,7 +27,7 @@ The benefits of having stronger visualization skills are far and wide but the pr
 
 ---
 ## The App
-Click <a href="Tattwa-Flashing-Colors.surge.sh" target="_blank">here</a> to begin the exercise
+Click <a href="https://Tattwa-Flashing-Colors.surge.sh" target="_blank">here</a> to begin the exercise
 
 ---
 ## Prototype View:
