@@ -12,16 +12,18 @@
     <title>Tattwa Flashing Colors</title>
 </head>
 <body>
-    <header class='first'><a href="https://youtu.be/LkJ3_B4-NSg?t=3303" target="_blank"><strong>Watch a video on the elements from the perspective of the Tattwas.</strong></a></header>
-    <header class='second'><a href="https://drive.google.com/file/d/1wsEa3zo1lG3PTiGSVwJYxGJUmPxyRm_4/view?usp=sharing" target="_blank"><strong>A PDF of the book that inspired the creation of this app</strong></a></header>
-    <header class='third'><a href="https://www.nytimes.com/2019/01/09/smarter-living/train-your-brain-like-a-memory-champion.html" target="_blank"><strong>A New York Times article on memory training </strong></a></header>
+    <!-- <div id="headerDiv"> -->
+    <header class='first'><a href="readmefile" target="_blank"><strong>Read me first to know how to use the app</strong></a></header>
+    <header class='second'><a href="https://youtu.be/LkJ3_B4-NSg?t=3303" target="_blank"><strong>Watch a video on the elements and Tattwas.</strong></a></header>
+    <header class='third'><a href="https://drive.google.com/file/d/1wsEa3zo1lG3PTiGSVwJYxGJUmPxyRm_4/view?usp=sharing" target="_blank"><strong>A PDF of the associated book</strong></a></header>
+    <!-- </div> -->
     <div id="cardThemeGrid" class="inline block">
-        <h3 id=themeCardMsg">You can change the card theme below</h3>
+        <h3 id="themeCardMsg">Card theme</h3>
         <div id="whtThemeCard" class="card wht plain shadow"></div>
         <div id="blkThemeCard" class="card blk plain shadow"></div>
     </div>
     <div id="cardGrid">
-        <h3 id="cardGridMsg">Please choose a card</h3>
+        <h3 id="cardGridMsg">Choose a card</h3>
         <div class="row">
             <div id="card" class="card wht ether et small shadow"></div>
             <div id="card" class="card wht ether f small shadow"></div>
@@ -58,25 +60,22 @@
             <div id="card" class="card wht earth e small shadow"></div>
         </div>
     </div>
-    <!-- <div class="flex-container"> -->
         <div id="mainCard" class="card outline mainCard"></div>
-    <!-- </div> -->
     <div id="logResults">
         <div class="logResultsDiv">
             <button id="logBtn">Log Results</button>
-            <input id="userColor" type="text" placeholder="Type flashed color & shape">
+            <input id="userColor" type="text" placeholder="Type flashed color">
         </div>
         <!-- <button id="clearLogBtn">Clear Log</button> -->
         <div id="logList">
-            <ul id="cardElement" class="log">Card Elements</ul>
-            <ul id="colorResults" class="log">Color & Shape List</ul>
-            <ul id="timeResults" class="log">Time Held List</ul>
+            <ul id="cardElement" class="log">Card List</ul>
+            <ul id="colorResults" class="log">Color List</ul>
+            <ul id="timeResults" class="log">Time List</ul>
         </div>
     </div>
     <div id="timeGrid">
         <select name="timeLimit" id="timeSelect">
             <option value="">Set a time limit</option>
-            <option value="10">10 seconds</option>
             <option value="30">30 seconds</option>
             <option value="45">45 seconds</option>
             <option value="1">1 minute</option>

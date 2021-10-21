@@ -28,10 +28,25 @@
     color: rgb(59, 62, 236);
     text-decoration: none;
   }
-  header {
+  #themeCardMsg, #cardGridMsg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(224, 217, 208);
-    height: 50px;
+    height: 25px;
     padding: 5px;
+    border-radius: 5px;
+    max-width: 350px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 217, 208);
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 350px;
   }
   body{
     font-family: 'Nunito', sans-serif;
