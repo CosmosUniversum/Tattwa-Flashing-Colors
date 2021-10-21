@@ -79,3 +79,5 @@ This is the current style of the page.
 - Create a filter list to filter card list by shapes/colors
 - Create a mode that uses the sanskrit names of cards making memorization more difficult
 - Create a scrying and divination feature for advanced Tattwa users and for fun
+- Add Mobile Responsiveness
+- Make as a downloadable App
