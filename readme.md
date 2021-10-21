@@ -34,13 +34,13 @@ Click <a href="Tattwa-Flashing-Colors-Beta.surge.sh" target="_blank">here</a> to
 Here is the wire frame of how the App was to be set up.<br>
 There are definitely less features on the actual deployed page because I realized there needs to be a basic understanding of the Tattwa system to make full use of the training mode. This would make full use of the preset card list filters and choices section.
 
-<img src="imgur.com/fdo9ivc">
+<img src="https://i.imgur.com/fdo9ivc.png">
 
 ---
 ## Finished View:
 This is the current style of the page.
 
-<img src="https://imgur.com/Tkos3Hp">
+<img src="https://i.imgur.com/Tkos3Hp.png">
 
 ---
 ## Technology Implemented:
