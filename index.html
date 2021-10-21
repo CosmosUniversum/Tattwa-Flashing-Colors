@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
     <link href="css/cardstarter.css" rel="stylesheet">
     <script defer src="js/app.js"></script>
     <title>Tattwa Flashing Colors</title>
 </head>
 <body>
-    <header>I will have links. Im the header</header>
+    <header class='first'><a href="https://youtu.be/LkJ3_B4-NSg?t=3303" target="_blank"><strong>Watch a video on the elements from the perspective of the Tattwas.</strong></a></header>
+    <header class='second'><a href="https://drive.google.com/file/d/1wsEa3zo1lG3PTiGSVwJYxGJUmPxyRm_4/view?usp=sharing" target="_blank"><strong>A PDF of the book that inspired the creation of this app</strong></a></header>
+    <header class='third'><a href="https://www.nytimes.com/2019/01/09/smarter-living/train-your-brain-like-a-memory-champion.html" target="_blank"><strong>A New York Times article on memory training </strong></a></header>
     <div id="cardThemeGrid" class="inline block">
         <h3 id=themeCardMsg">You can change the card theme below</h3>
         <div id="whtThemeCard" class="card wht plain shadow"></div>
         <div id="blkThemeCard" class="card blk plain shadow"></div>
     </div>
-    <div id="cardGrid" class="inline grid">
+    <div id="cardGrid">
         <h3 id="cardGridMsg">Please choose a card</h3>
         <div class="row">
             <div id="card" class="card wht ether et small shadow"></div>
@@ -57,9 +62,11 @@
         <div id="mainCard" class="card outline mainCard"></div>
     <!-- </div> -->
     <div id="logResults">
-        <button id="logBtn">Log Results</button>
-        <input id="userColor" type="text" placeholder="Type flashed color & shape">
-        <button id="clearLogBtn">Clear Log</button>
+        <div class="logResultsDiv">
+            <button id="logBtn">Log Results</button>
+            <input id="userColor" type="text" placeholder="Type flashed color & shape">
+        </div>
+        <!-- <button id="clearLogBtn">Clear Log</button> -->
         <div id="logList">
             <ul id="cardElement" class="log">Card Elements</ul>
             <ul id="colorResults" class="log">Color & Shape List</ul>
