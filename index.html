@@ -9,38 +9,14 @@
     <title>Tattwa Flashing Colors</title>
 </head>
 <body>
-    <header></header>
-    <div id="mainCard" class="card outline mainCard"></div>
-        <div>
-            <ul id="cardElement">Card Elements
-
-            </ul>
-
-            <ul id="colorResults">Color & Shape List
-
-            </ul>
-            <ul id="timeResults">Time Held List
-
-            </ul>
-        <input id="userColor" type="text" placeholder="Type flashed color & shape">
-        <button id="logBtn">Log Results</button>
+    <header>I will have links. Im the header</header>
+    <div id="cardThemeGrid" class="inline block">
+        <h3 id=themeCardMsg">You can change the card theme below</h3>
+        <div id="whtThemeCard" class="card wht plain shadow"></div>
+        <div id="blkThemeCard" class="card blk plain shadow"></div>
     </div>
-    <h3 id="mainCardMsg">You can change the cards background theme by clicking one of the themes below
-    </h3>
-    <div id="whtThemeCard" class="card wht plain shadow"></div>
-    <div id="blkThemeCard" class="card blk plain shadow"></div>
-    <select name="timeLimit" id="timeSelect">
-        <option value="">Set a time limit</option>
-        <option value="10">10 seconds</option>
-        <option value="30">30 seconds</option>
-        <option value="45">45 seconds</option>
-        <option value="1">1 minute</option>
-    </select>
-    <h2  id='timer'>0:00</h2>
-    <button id="startBtn">Start</button>
-    <button id="resetBtn">Reset</button>
-    <h3 id="cardGridMsg">Please choose a card</h3>
-    <div id="cardGrid">
+    <div id="cardGrid" class="inline grid">
+        <h3 id="cardGridMsg">Please choose a card</h3>
         <div class="row">
             <div id="card" class="card wht ether et small shadow"></div>
             <div id="card" class="card wht ether f small shadow"></div>
@@ -77,5 +53,27 @@
             <div id="card" class="card wht earth e small shadow"></div>
         </div>
     </div>
-    </body>
+    <!-- <div class="flex-container"> -->
+        <div id="mainCard" class="card outline mainCard"></div>
+    <!-- </div> -->
+    <div id="logResults" class="inline grid">
+        <button id="logBtn">Log Results</button>
+        <input id="userColor" type="text" placeholder="Type flashed color & shape">
+            <ul id="cardElement">Card Elements</ul>
+            <ul id="colorResults">Color & Shape List</ul>
+            <ul id="timeResults">Time Held List</ul>
+    </div>
+    <div id="timeGrid" class="inline grid">
+        <select name="timeLimit" id="timeSelect">
+            <option value="">Set a time limit</option>
+            <option value="10">10 seconds</option>
+            <option value="30">30 seconds</option>
+            <option value="45">45 seconds</option>
+            <option value="1">1 minute</option>
+        </select>
+        <h2  id='timer'>0:00</h2>
+        <button id="startBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+</body>
 </html>
