@@ -1,15 +1,5 @@
 @charset "UTF-8";
 
-/* .inline.grid {
-  display:inline-grid;
-} */
-
-/* .inline.block {
-  display: inline-block;
-  max-width: 180px;
-}
- */
-
 .card {
   box-sizing: border-box;
   display: inline-block;
@@ -36,9 +26,10 @@
   droppable place, like an empty pile. */ }
   
   body{
-    background-color: #8a8a8ab2;
+    margin: 50px;
+    background-color: #8f8f8fb2;
     display: grid;
-    grid-template-columns: 35% 40% 20%;
+    grid-template-columns: 35% 35% 30%;
     grid-template-rows: 10% 30% 40% 50%;
   }
   .card.xsmall {
@@ -60,6 +51,7 @@
     background-image: none;
     background-color: rgba(195, 195, 195, 0.5);
     border: 0.15em dashed #daa520; }
+  
 #mainCard {
   grid-column: 2/3;
   grid-row: 3/4;
@@ -72,17 +64,19 @@
   grid-row: 2/4;
 }
 #cardGrid {
+  margin-top: 13px;
   grid-row: 3/4;
 }
-#timeGrid{
+#timeGrid {
   grid-column: 2/3;
   grid-row: 2/4;
 }
 
-#logResults{
+#logResults {
   grid-column: 3/3;
   grid-row: 3/4;
 }
+
 #timer {
   color: ghostwhite;
   border-radius: 10px;
@@ -90,6 +84,11 @@
   border-style: double;
   max-width: fit-content;
   padding: 10px;
+}
+
+#logList {
+  display: inline-flex;
+
 }
 .card.wht.plain {
   background-image: url("../card-images/Plain/wht-only.png");}

@@ -7,6 +7,7 @@ let min, sec, seconds = 0
 createColorResultsLi = document.createElement('li')
 createTimeResultsLi = document.createElement('li')
 createCardLogLi = document.createElement('li')
+// let logs = document.querySelectorAll('log')
 let loggedCard = [null]
 
 /*------------- Variables (state) -------------*/
@@ -27,6 +28,7 @@ userColorInputEl = document.getElementById('userColor')
 colorResultsEl = document.getElementById('colorResults')
 timeResultsEl = document.getElementById('timeResults')
 cardLogEl = document.getElementById('cardElement')
+clearLogBtnEl = document.getElementById('clearLogBtn')
 /*-------------- Event Listeners --------------*/
 
 whtThemeCardEl.addEventListener('click',() => {
@@ -90,8 +92,9 @@ resetBtnEl.addEventListener('click',() => {
 })
 
 logBtnEl.addEventListener('click',() => {
-  if (userColorInputEl.value === '') {
+  if (userColorInputEl.value === '' || mainCardEl.classList.value.includes('outline') || timerEl.innerText === '0:00') {
   }else{
+    
     let newUserInput = document.createElement('li');
 
     newUserInput.textContent = userColorInputEl.value;
@@ -108,6 +111,13 @@ logBtnEl.addEventListener('click',() => {
     cardLogEl.appendChild(newCard);
   }
 })
+
+// clearLogBtnEl.addEventListener('click', () =>{
+//   let logs = document.querySelectorAll('log')
+//   while (logs.firstchild) {
+//     logs.removeChild(logs.firstchild);
+//   }
+// })
 
 
 /*----------------- Functions -----------------*/

@@ -56,14 +56,17 @@
     <!-- <div class="flex-container"> -->
         <div id="mainCard" class="card outline mainCard"></div>
     <!-- </div> -->
-    <div id="logResults" class="inline grid">
+    <div id="logResults">
         <button id="logBtn">Log Results</button>
         <input id="userColor" type="text" placeholder="Type flashed color & shape">
-            <ul id="cardElement">Card Elements</ul>
-            <ul id="colorResults">Color & Shape List</ul>
-            <ul id="timeResults">Time Held List</ul>
+        <button id="clearLogBtn">Clear Log</button>
+        <div id="logList">
+            <ul id="cardElement" class="log">Card Elements</ul>
+            <ul id="colorResults" class="log">Color & Shape List</ul>
+            <ul id="timeResults" class="log">Time Held List</ul>
+        </div>
     </div>
-    <div id="timeGrid" class="inline grid">
+    <div id="timeGrid">
         <select name="timeLimit" id="timeSelect">
             <option value="">Set a time limit</option>
             <option value="10">10 seconds</option>
