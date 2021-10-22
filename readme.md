@@ -10,9 +10,10 @@
 - The selected card will come up to the empty outlined card section.
 - Once the card has been selected and is showing as the main card, <strong>select a timer</strong>.
   - I would suggest starting at 30 seconds to get used to the exercise first.
-- Once a card has been selected and timer has been set, click the <strong>Start</strong> button and the timer will begin to countdown.
----
 ## The Exercise
+---
+Read through the all steps of the exercise first before beginning
+- Once a card has been selected and timer has been set, click the <strong>Start</strong> button and the timer will begin to countdown.
 - Gently stare at the center of the image imagining that there is a dot there.
 - As time goes on you will notice an Aura begin to take form around the shapes and becomes more pronounced the longer the time goes.
 - Continue staring at the center gently, remembering not to strain yourself and once the timer has reached zero it will begin to count up and the inner shapes will be removed and you are just left with the blank background of the card.
