@@ -6,6 +6,7 @@
 ## How to use the App:
 - You can select a background color for the cards. The default background is set to white as it is easier to see after images on a white background.
 - <strong>Select a card</strong> from the area with multiple cards and shapes on them.
+  - I would suggest selecting a card with a small shape inside of another one. The after image will be more pronounced.
 - The selected card will come up to the empty outlined card section.
 - Once the card has been selected and is showing as the main card, <strong>select a timer</strong>.
   - I would suggest starting at 30 seconds to get used to the exercise first.
